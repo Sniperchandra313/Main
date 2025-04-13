@@ -29,7 +29,7 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
       - name: Docker login
-        run: echo "${{chandrachandra42428@gmail.com}}"  | Docker login -u "${{ Chandramouli1 }}" --passowrd-stdin
+        run: echo "${{ secrit.DOCKER_PASSWORD }}"  | Docker login -u "${{ secrit.DOCKER_USERNAME }}" --passowrd-stdin
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
